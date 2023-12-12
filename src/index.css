@@ -1,13 +1,59 @@
-body {
+/*--------------------------------------------------------------------------------- simple slick slider */
+/* Customize Slick Slider dots */
+.simple_slick.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  list-style: none !important;
+  display: flex;
+  justify-content: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.simple_slick .slick-dots li {
+  margin: 0 8px;
+}
+
+.simple_slick .slick-dots button {
+  font-size: 14px;
+  background: gray !important;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.simple_slick .slick-dots li button:before {
+  color: gray !important;
+}
+.simple_slick .slick-dots li.slick-active button:before {
+  color: black !important;
+}
+
+.simple_slick .slick-dots .slick-active button {
+  background-color: black !important; /* Customize the active dot color */
+  border-radius: 50%;
+}
+
+/*----------------------------------------------------------------------------- slick slider center mod */
+
+  @media (min-width:992px) {
+    .center_slick .slick-slide.slick-center div {
+        transform: scale(1.03) !important;
+        opacity: 1 !important;
+      }
+  }
+/*------------------------------------------------------------------------------------- swiper slider ---------------------------------------*/
+
+.swiper-pagination-bullet {
+  background-color: gray !important;
+  opacity: 1 !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+.swiper-pagination {
+  bottom: -1% !important;
 }
