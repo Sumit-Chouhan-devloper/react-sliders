@@ -27,8 +27,7 @@ const Todo = () => {
               <div>
                 <div
                   key={todo}
-                  className="flex justify-between items-center border-t border-collapse border-[#E2E8F0] px-4 py-[10px]"
-                >
+                  className="flex justify-between items-center border-t border-collapse border-[#E2E8F0] px-4 py-[10px]">
                   <p className="ff_inter text-[#64748B] text-[14px] font-normal leading-normal">
                     {obj.para}
                   </p>
